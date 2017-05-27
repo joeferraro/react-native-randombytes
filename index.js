@@ -2,7 +2,6 @@ if (typeof Buffer === 'undefined') {
   global.Buffer = require('buffer').Buffer
 }
 
-let sjcl = require('sjcl')
 let RNRandomBytes = require('react-native').NativeModules.RNRandomBytes
 
 function noop() {};
