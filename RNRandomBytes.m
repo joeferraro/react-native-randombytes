@@ -7,23 +7,9 @@
 //
 #import "RNRandomBytes.h"
 
-#if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
-#else
-#import <React/RCTBridgeModule.h>
-#endif
-
-#if __has_include("RCTBridge.h")
-#import "RCTBridge.h"
-#else
-#import <React/RCTBridge.h>
-#endif
-
 @implementation RNRandomBytes
 
 RCT_EXPORT_MODULE()
-
-@synthesize bridge = _bridge;
 
 RCT_EXPORT_METHOD(randomBytes:(NSUInteger)length
                   callback:(RCTResponseSenderBlock)callback)
